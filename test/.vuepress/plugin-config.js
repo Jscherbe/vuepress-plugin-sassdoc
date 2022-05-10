@@ -1,7 +1,9 @@
 const path = require("path");
 
 module.exports = {
-  dir: path.resolve(__dirname, "sass/"),
+  dir: path.resolve(__dirname, "./scss-tests/"),
+  byType: true,
+  pathBase: "/by-type/",
   debug: true,
   debugToDir: path.resolve(__dirname, "logs/"),
   previewMeta: `

@@ -1,6 +1,6 @@
 const { description } = require('../../package');
 const sassdocPlugin = require("../../index.js");
-const sassdocPluginOptions = require("../plugin-config.js");
+const sassdocPluginOptions = require("./plugin-config.js");
 
 module.exports = {
   title: '@ulu/vuepress-plugin-sassdoc (test)',
@@ -19,6 +19,11 @@ module.exports = {
   },
   plugins: [
     [sassdocPlugin, sassdocPluginOptions],
+    [sassdocPlugin, {
+      ...sassdocPluginOptions,
+      byType: false,
+      pathBase: "/not-by-type/"
+    }],
     "@ulu/vuepress-plugin-auto-nav"
   ]
 }
