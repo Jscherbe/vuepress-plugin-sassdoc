@@ -1,6 +1,6 @@
 {
   "name": "@ulu/vuepress-plugin-sassdoc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Creates pages for sassdoc groups in vuepress (as markdown). Supports all annotations, custom annotations, groups display name and description, and content blocks in content. Items organized by type (variable, mixin, etc).",
   "main": "index.js",
   "directories": {
@@ -20,7 +20,9 @@
     "vuepress",
     "vuepress-plugin",
     "sass",
-    "documentation"
+    "documentation",
+    "html preview",
+    "compiled example"
   ],
   "author": "Joseph Scherben <jscherbe@gmail.com>",
   "license": "MIT",

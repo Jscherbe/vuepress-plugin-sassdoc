@@ -6,15 +6,14 @@ If you encounter bugs or have a feature request, feel free to open an issue on g
 
 ## Features
 
-- Can be used multiple times (useful for dividing things up into different 'pathBase')
 - Compiled Sass examples (Dart Sass) 
-- Compiled Sass can be configured to use your own implementation, see options
-- Ability to add custom compiler (ie. if)
+- Compiled examples can be configured to use your own implementation, see options (ie. if using node-sass for example)
 - Preview HTML examples (demos, etc)
 - Content blocks between documented items
-- Custom group display names 
-- Ability to capture group descriptions (you can also use content blocks to describe groups)
+- Custom group display names by adding dash ie `/// @group util - Shared Utilities`
+- Group descriptions pulled from lines after group definition (you can also use content blocks to describe groups)
 - Ability to override annotation and page templates
+- Can be used multiple times (useful for dividing things up into different 'pathBase')
 
 ## Compiled Examples
 
@@ -44,8 +43,12 @@ If you encounter bugs or have a feature request, feel free to open an issue on g
 
 ## Options
 
-Coming soon…
+Coming soon, will fill in details about all plugin options…
 
 For now configuration can be seen in the tests `test/.vuepress/plugin-config.js` in this repo. Full options can be viewed at `lib/defaults.js` in this repo. This will be added to the readme eventually.
+
+You need to specify the "pathBase" in options defaults to /sass/. If the pathBase is "/sass/", you will need to create the directory ie "/sass/index.md". This is the base path for all pages created by the plugin. To break up into multiple directories, use the plugin multiple times targeting the desired files. Keep in mind you can exclude files in the 'sassdocOptions' object.
+
+you will need a method to list the pages in your site's navigation. If you are using the default theme you can use @ulu/vuepress-plugin-auto-nav (NPM package) to fill in the navigation (so you have links to pages) based on their path hierarchy.
 
 
