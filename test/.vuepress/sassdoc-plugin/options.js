@@ -1,11 +1,11 @@
-const path = require("path");
+import { resolve } from "path";
 
-module.exports = {
-  dir: path.resolve(__dirname, "./scss-tests/"),
+export default {
+  dir: resolve(__dirname, "../scss/"),
   byType: true,
   pathBase: "/by-type/",
   debug: true,
-  debugToDir: path.resolve(__dirname, "logs/"),
+  debugToDir: __dirname,
   previewMeta: `
     <title>Sassdoc Example</title>
     <meta charset="utf-8">
@@ -15,4 +15,4 @@ module.exports = {
   previewBodyScripts: `
     <script src="/sassdoc-preview.js"></script>
   `
-};
+}

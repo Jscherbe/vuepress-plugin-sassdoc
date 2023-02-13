@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import { previewStyles, previewMeta, previewBodyScripts } from '@dynamic/sassdoc-options';
+  import { previewStyles, previewMeta, previewBodyScripts } from '@temp/sassdoc-options.js';
   export default {
     name: 'SassdocPreview',
     inject: ["getSassdocItem"],

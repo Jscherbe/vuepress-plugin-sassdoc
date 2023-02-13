@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <details class="SassdocDetails">
     <summary v-if="props.summary">
       {{ props.summary }}

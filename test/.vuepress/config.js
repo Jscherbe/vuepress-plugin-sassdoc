@@ -1,29 +1,12 @@
-const { description } = require('../../package');
-const sassdocPlugin = require("../../index.js");
-const sassdocPluginOptions = require("./plugin-config.js");
+import { defineUserConfig } from 'vuepress'
+import plugin from '../../index.js'
+import options from './sassdoc-plugin/options.js'
 
-module.exports = {
-  title: '@ulu/vuepress-plugin-sassdoc (test)',
-  description: description,
-  themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
-    pluginAutoNav: {
-      createSidebar: true,
-      createNav: true,
-      sidebarAllSections: false
-    }
-  },
+export default defineUserConfig({
+  lang: 'en-US',
+  title: "Test for Plugin",
+  description: "Vuepress test site used to test the plugin",
   plugins: [
-    [sassdocPlugin, sassdocPluginOptions],
-    [sassdocPlugin, {
-      ...sassdocPluginOptions,
-      byType: false,
-      pathBase: "/not-by-type/"
-    }],
-    "@ulu/vuepress-plugin-auto-nav"
+    plugin(options)
   ]
-}
+});

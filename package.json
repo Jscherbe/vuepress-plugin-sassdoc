@@ -1,7 +1,7 @@
 {
   "name": "@ulu/vuepress-plugin-sassdoc",
-  "version": "1.0.2",
-  "description": "Creates pages for sassdoc groups in vuepress (as markdown). Supports all annotations, custom annotations, groups display name and description, and content blocks in content. Items organized by type (variable, mixin, etc).",
+  "version": "2.0.0",
+  "description": "Creates pages for sassdoc groups in vuepress (as markdown). Works with Vuepress 2, see old releases (v1) for Vuepress 1 version. Supports all annotations, custom annotations, groups display name and description, and content blocks in content. Items organized by type (variable, mixin, etc).",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -16,9 +16,9 @@
     "url": "git+https://github.com/Jscherbe/vuepress-plugin-sassdoc.git"
   },
   "keywords": [
+    "vuepress-plugin",
     "sassdoc",
     "vuepress",
-    "vuepress-plugin",
     "sass",
     "documentation",
     "html preview",
@@ -30,14 +30,13 @@
     "url": "https://github.com/Jscherbe/vuepress-plugin-sassdoc/issues"
   },
   "homepage": "https://github.com/Jscherbe/vuepress-plugin-sassdoc#readme",
-  "dependencies": {
-    "markdown-it-attrs": "^4.1.4",
-    "sassdoc": "^2.7.4",
-    "strip-indent": "^3.0.0"
-  },
   "devDependencies": {
-    "@ulu/vuepress-plugin-auto-nav": "^1.0.0",
-    "sass": "^1.51.0",
-    "vuepress": "^1.9.7"
+    "sass": "^1.58.0",
+    "vuepress": "^2.0.0-beta.60"
+  },
+  "dependencies": {
+    "markdown-it-attrs": "^4.1.6",
+    "sassdoc": "^2.7.4",
+    "strip-indent": "^4.0.0"
   }
 }
