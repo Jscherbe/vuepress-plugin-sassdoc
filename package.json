@@ -3,13 +3,16 @@
   "version": "2.0.0",
   "description": "Creates pages for sassdoc groups in vuepress (as markdown). Works with Vuepress 2, see old releases (v1) for Vuepress 1 version. Supports all annotations, custom annotations, groups display name and description, and content blocks in content. Items organized by type (variable, mixin, etc).",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "lib": "lib",
     "test": "test"
   },
   "scripts": {
     "test:build": "vuepress build test",
-    "test:dev": "vuepress dev test"
+    "test:dev": "concurrently --kill-others \"npm run test:watch\" \"vuepress dev test\"",
+    "test:output": "node ./test/.vuepress/sassdoc-output.js",
+    "test:watch": "node ./test/.vuepress/sassdoc-output.js --watch"
   },
   "repository": {
     "type": "git",
@@ -31,12 +34,23 @@
   },
   "homepage": "https://github.com/Jscherbe/vuepress-plugin-sassdoc#readme",
   "devDependencies": {
-    "sass": "^1.58.0",
-    "vuepress": "^2.0.0-beta.60"
+    "chokidar": "^3.5.3",
+    "concurrently": "^8.0.1",
+    "sass": "^1.60.0",
+    "vuepress": "^2.0.0-beta.61"
   },
   "dependencies": {
+    "directory-tree": "^3.5.1",
+    "front-matter": "^4.0.2",
+    "fs-extra": "^11.1.0",
+    "html-to-text": "^9.0.4",
     "markdown-it-attrs": "^4.1.6",
+    "markdown-it-plain-text": "^0.3.0",
     "sassdoc": "^2.7.4",
-    "strip-indent": "^4.0.0"
+    "strip-indent": "^4.0.0",
+    "yaml": "^2.2.1"
+  },
+  "peerDependencies": {
+    "sass": ">1.50"
   }
 }

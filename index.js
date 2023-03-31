@@ -1,5 +1,3 @@
-import { plugin } from './lib/plugin.js';
-import { toSidebarConfig } from './lib/to-sidebar-config.js';
-export default plugin;
-export { plugin, toSidebarConfig };
-
+import { outputPages } from "./lib/output-pages.js";
+import { plugin } from "./lib/plugin.js";
+export { outputPages, plugin };

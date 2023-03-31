@@ -1,3 +1,8 @@
+---
+title: Test-function
+sassdocGroupName: test-function
+---
+
 
 # Test-function
 
@@ -10,7 +15,7 @@
 
 
 
-###  global-test() <badge text="function" type="tip" vertical="top" />  {#function-global-test} 
+###  global-test() <Badge text="function" type="tip" vertical="top" />  {#function-global-test} 
 
   
 
@@ -38,11 +43,11 @@ This is a *deprecation* message.
 
 <SassdocDetails summary="Meta Information">
 
-- **File:** _sassdoc-test.scss
+- **File:** _sassdoc.scss
 - **Group:** test-function
 - **Type:** function
-- **Lines (comments):** 10-60
-- **Lines (code):** 62-62
+- **Lines (comments):** 12-62
+- **Lines (code):** 64-64
 - **Author:** Pascal **Duez**,Valérian **Galliat**,Kitty **Giraudel**,Fabrice **Weinberg**
 
 </SassdocDetails>
@@ -86,15 +91,15 @@ $test: function-global-test();
 
 #### See
 
-- [function-specific-test()](/by-type/test/#function-function-specific-test)
+- [function-specific-test()](/sass/test/#function-function-specific-test)
   
 
 #### Require
 
-- [function-specific-test()](/by-type/test/#function-function-specific-test) - This is a description with a dash.
-- [mixin-specific-test()](/by-type/test/#mixin-mixin-specific-test) - This is a description with no dash.
-- [$variable-specific-test](/by-type/test/#variable-variable-specific-test)
-- [%placeholder-specific-test](/by-type/test/#placeholder-placeholder-specific-test) - This is a description and a link. http://sassdoc.com
+- [function-specific-test()](/sass/test/#function-function-specific-test) - This is a description with a dash.
+- [mixin-specific-test()](/sass/test/#mixin-mixin-specific-test) - This is a description with no dash.
+- [$variable-specific-test](/sass/test/#variable-variable-specific-test)
+- [%placeholder-specific-test](/sass/test/#placeholder-placeholder-specific-test) - This is a description and a link. http://sassdoc.com
 - `this::is::an::external::dependancy` - External dependency with double colon http://github.com
 - `this:is:an:external:dependancy` - External dependency with single colon http://github.com
 - `this/is/an/external/dependancy` - External dependency with slash http://github.com
@@ -103,7 +108,7 @@ $test: function-global-test();
   
 
 <script>
-const sassdocGroup = [{"groupName":"test-function","id":"function-global-test","uid":"test-function-function-global-test","title":"global-test()","groupPath":"/by-type/test-function/","path":"/by-type/test-function/#function-global-test","previewsByIndex":{}}];
+const sassdocGroup = [{"groupName":"test-function","id":"function-global-test","uid":"test-function-function-global-test","title":"global-test()","groupPath":"/sass/test-function/","path":"/sass/test-function/#function-global-test","previewsByIndex":{}}];
 export default {
   sassdocGroup,
   provide: {
