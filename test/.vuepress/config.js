@@ -2,7 +2,7 @@ import { defineUserConfig } from "vuepress";
 import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 import { defaultTheme } from "@vuepress/theme-default";
-import { createTree, toDefaultTheme } from "../../tree-util/index.js";
+import { createTree, toDefaultTheme } from "@ulu/vuepress-page-tree";
 import { plugin } from "../../index.js";
 import sassdocOptions from "./sassdoc-options.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));

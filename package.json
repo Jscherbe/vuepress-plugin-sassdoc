@@ -34,16 +34,14 @@
   },
   "homepage": "https://github.com/Jscherbe/vuepress-plugin-sassdoc#readme",
   "devDependencies": {
+    "@ulu/vuepress-page-tree": "^0.0.1",
     "chokidar": "^3.5.3",
     "concurrently": "^8.0.1",
     "sass": "^1.60.0",
     "vuepress": "^2.0.0-beta.61"
   },
   "dependencies": {
-    "directory-tree": "^3.5.1",
-    "front-matter": "^4.0.2",
     "fs-extra": "^11.1.0",
-    "html-to-text": "^9.0.4",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-plain-text": "^0.3.0",
     "sassdoc": "^2.7.4",

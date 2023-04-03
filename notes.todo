@@ -1,7 +1,10 @@
 Todos:
-  ☐ Recreate the test
-  ☐ The compiler option can be used to render the sass however the user wants, the issue and it may not really matter, is that the compile function (the default) imports sass so it needs to be installed
-  ☐ Instead of trying to run all of this in Vuepress, let's just have the user setup outputPages as a seperate process (Script)
+  ☐ Cleanup old files
+  ☐ Seperate the tree utility back into auto nav
+    ☐ Remember to remove packages used by this (front-matter for example)
+  ✔ Recreate the test @done
+  ✘ The compiler option can be used to render the sass however the user wants, the issue and it may not really matter, is that the compile function (the default) imports sass so it needs to be installed @cancelled
+  ✔ Instead of trying to run all of this in Vuepress, let's just have the user setup outputPages as a seperate process (Script) @done
     * Looked into using deasync but I think it overcomplicates things and the user can implement that on their own
     * Or user can use conurrently 
     * Or user can run the process before they run vuepress ie npm run output-sassdoc && ...
